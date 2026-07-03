@@ -116,9 +116,9 @@ The project is currently under development.
 
 Current progress:
 
-- ✅ Initial React interface
-- ✅ Dynamic subject creation
-- 🚧 Backend development
+- 🚧 Initial React interface
+- 🚧 Dynamic subject creation
+- ⏳ Backend development
 - ⏳ Database integration
 - ⏳ Authentication
 - ⏳ Dashboard
