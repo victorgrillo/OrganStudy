@@ -158,7 +158,7 @@ This project was created to practice and improve my skills in:
 - Charts
 - Reports
 - Study streak
-Phase 4
+# Phase 4
 - Login
 - JWT Authentication
 - Responsive Design
