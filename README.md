@@ -142,30 +142,23 @@ This project was created to practice and improve my skills in:
 
 ---
 
-# 🗺️ Roadmap
+## 🗺️ Roadmap
 
-## Phase 1
-
+# Phase 1
 - Subject CRUD
 - Pomodoro Timer
 - Save study sessions
 - Total study hours
-
-## Phase 2
-
+# Phase 2
 - Calendar
 - Weekly goals
 - Dashboard
-
-## Phase 3
-
+# Phase 3
 - Statistics
 - Charts
 - Reports
 - Study streak
-
-## Phase 4
-
+Phase 4
 - Login
 - JWT Authentication
 - Responsive Design
