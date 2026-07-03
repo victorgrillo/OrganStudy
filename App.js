@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { COLORS, SIZES, FONTS  } from './theme';
 
 export default function MainScreen () {
   return (
@@ -26,6 +27,15 @@ export default function MainScreen () {
       <Text style={style.subjects}>
         Matérias
       </Text>
+
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        <View style={style.addSubjectCards}>
+        <Text>Nova Matéria</Text>
+        </View>
+        
+      
+      
+      </ScrollView>
       
 
     </View>
@@ -41,53 +51,53 @@ export default function MainScreen () {
 
 const style = StyleSheet.create({
   tela: {
-    backgroundColor: '#5A5C70',
+    backgroundColor: COLORS.background,
     flex: 1,
   },
   title: {
-    paddingHorizontal: 20,
+    paddingHorizontal: SIZES.padding,
     paddingTop: 40,
-
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-
   },
-  iconsHomeUp:{
+  iconsHomeUp: {
     flexDirection: 'row',
-    
   },
   salutation: {
-    color: '#D1D1D6',
-    fontFamily: 'sans-serif-medium',
-    marginTop: 15,
-    fontSize: 12,
-
-
+    color: COLORS.textMuted,
+    fontFamily: FONTS.body,
+    marginTop: SIZES.base * 2, 
+    fontSize: SIZES.small,
   },
   salutation2: {
-    color: '#FFFFFF',
-    fontFamily: 'Poppins',
-    marginTop: 5,
+    color: COLORS.textMain,
+    fontFamily: FONTS.title,
+    marginTop: SIZES.base / 2, 
     fontWeight: 'bold',
-    fontSize: 20,
-
+    fontSize: SIZES.fontTitle,
   },
   organStudy: {
-    color: '#E05A5A',
-    fontFamily: 'Poppins',
-    fontSize: 20,
+    color: COLORS.primary,
+    fontFamily: FONTS.title,
+    fontSize: SIZES.fontTitle,
   },
   subjects: {
-     color: '#E05A5A',
-     fontFamily: 'sans-serif-medium',
-     fontWeight: 'bold',
-     marginTop: 5,
-
+    color: COLORS.primary,
+    fontFamily: FONTS.body,
+    fontWeight: 'bold',
+    marginTop: SIZES.base,
   },
-
-
-}
-
-)
+  addSubjectCards: {
+    height: 160,
+    width: 140,
+    marginTop: SIZES.base + 2, 
+    borderRadius: SIZES.radiusCard,
+    borderWidth: 2,
+    borderStyle: 'dashed', 
+    borderColor: COLORS.textMuted,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+});
